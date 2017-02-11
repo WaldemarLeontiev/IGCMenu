@@ -31,6 +31,7 @@
 @property int maxColumn;                            //Maximium number of column,default is 3
 @property int menuHeight;                           //height = width ,default is 65
 @property UIColor *labelColor;
+@property CGFloat labelWidth;
 
 -(void)showCircularMenu;
 -(void)hideCircularMenu;

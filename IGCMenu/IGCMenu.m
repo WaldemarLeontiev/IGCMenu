@@ -31,6 +31,7 @@
         self.menuRadius = 120;
         self.maxColumn = 3;
         self.labelColor = [UIColor whiteColor];
+        self.labelWidth = 128;
     }
     return self;
 }
@@ -67,7 +68,7 @@
             menuNameLabel.backgroundColor = [UIColor clearColor];
             menuNameLabel.numberOfLines = 0;
             newFrame = menuNameLabel.frame;
-            newFrame.size = CGSizeMake(menuButton.frame.size.width, 20);
+            newFrame.size = CGSizeMake(self.labelWidth, 20);
             menuNameLabel.frame = newFrame;
             menuNameLabel.center = menuButton.center;
             menuNameLabel.layer.opacity = 0.0;
