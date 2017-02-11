@@ -30,6 +30,7 @@
 @property (nonatomic) BOOL disableBackground;       //Disable background view, default is TRUE
 @property int maxColumn;                            //Maximium number of column,default is 3
 @property int menuHeight;                           //height = width ,default is 65
+@property UIColor *labelColor;
 
 -(void)showCircularMenu;
 -(void)hideCircularMenu;

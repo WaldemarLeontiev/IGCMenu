@@ -30,6 +30,7 @@
         self.numberOfMenuItem = 0;
         self.menuRadius = 120;
         self.maxColumn = 3;
+        self.labelColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -64,7 +65,7 @@
         if (self.menuItemsNameArray.count > i) {
             UILabel *menuNameLabel = [[UILabel alloc] init];
             menuNameLabel.backgroundColor = [UIColor clearColor];
-            menuNameLabel.numberOfLines = 1;
+            menuNameLabel.numberOfLines = 0;
             newFrame = menuNameLabel.frame;
             newFrame.size = CGSizeMake(menuButton.frame.size.width, 20);
             menuNameLabel.frame = newFrame;
@@ -74,7 +75,7 @@
             menuNameLabel.font = [UIFont systemFontOfSize:12];
             menuNameLabel.text = self.menuItemsNameArray[i];
             [menuNameLabel sizeToFit];
-            menuNameLabel.textColor = [UIColor whiteColor];
+            menuNameLabel.textColor = self.labelColor;
             [pMenuButtonSuperView insertSubview:menuNameLabel belowSubview:self.menuButton];
             [menuNameLabelArray addObject:menuNameLabel];
         }
