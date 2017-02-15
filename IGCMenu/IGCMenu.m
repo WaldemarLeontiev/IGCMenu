@@ -32,6 +32,7 @@
         self.maxColumn = 3;
         self.labelColor = [UIColor whiteColor];
         self.labelWidth = 128;
+        self.transparentBackgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
     }
     return self;
 }
@@ -105,7 +106,7 @@
         [self.menuSuperView insertSubview:pMenuButtonSuperView belowSubview:self.menuButton];
     if (self.disableBackground) {
         pMenuButtonSuperView.userInteractionEnabled = YES;
-        pMenuButtonSuperView.layer.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8].CGColor;
+        pMenuButtonSuperView.layer.backgroundColor = self.transparentBackgroundColor.CGColor;
     }
     else{
         pMenuButtonSuperView.userInteractionEnabled = NO;

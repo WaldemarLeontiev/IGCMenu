@@ -32,6 +32,7 @@
 @property int menuHeight;                           //height = width ,default is 65
 @property UIColor *labelColor;
 @property CGFloat labelWidth;
+@property UIColor *transparentBackgroundColor;
 
 -(void)showCircularMenu;
 -(void)hideCircularMenu;
